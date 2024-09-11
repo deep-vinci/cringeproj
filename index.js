@@ -20,12 +20,13 @@ const getSize = () => {
         width: window.screen.availWidth - 100
     }        
 }
-console.log(window.screen.availHeight)
+
 dialogButtonNo.addEventListener("mouseover", () => {
     dialogButtonNo.style.position = "absolute";
     dialogButtonNo.style.left = `${getRandom(100, getSize().width)}px`;
     dialogButtonNo.style.top = `${getRandom(100, getSize().height)}px`;
 })
+
 dialogButtonYes.addEventListener("click", () => {
     alert(responseYes)
 })
