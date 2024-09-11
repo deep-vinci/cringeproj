@@ -5,8 +5,8 @@ let dialogButtonYes = document.querySelector(".button-yes");
 let dialogButtonNo = document.querySelector(".button-no");
 
 const urlParams = new URLSearchParams(window.location.search);
-let question = urlParams.get("question");
-let responseYes = urlParams.get("response-yes");
+let question = urlParams.get("question") || "Question in url";
+let responseYes = urlParams.get("response-yes") || "Response in url";
 
 headerText.textContent = question;
 
